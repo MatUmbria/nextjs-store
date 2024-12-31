@@ -1,7 +1,7 @@
 // pages/dynamic.tsx
 
 import { GetServerSideProps, NextPage } from "next"
-import { useEffect, useState } from "react"
+import { ReactNode, useEffect, useState } from "react"
 import { Col, Container, Row } from "reactstrap"
 
 
@@ -47,11 +47,7 @@ type ApiResponse = {
             </h3>
             </Col>
 
-            <Col>
-            <h3>
-                Gerado no cliente: {clientSideData?.timestamp}
-            </h3>
-            </Col>
+
         </Row>
         </Container>
     )
